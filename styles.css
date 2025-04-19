@@ -71,7 +71,7 @@ body {
 
 .btn {
   height: 35px;
-  width: 90px;
+  width: 140px;
   border: solid 1px green;
   border-radius: 10px;
   background-color: green;
@@ -208,7 +208,7 @@ p {
 
 .projects-div {
   margin-top: 40px;
-  height: 600px;
+  height: 1100px;
   width: 100%;
   background: linear-gradient(#e8e9f4, #bdbbff);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4),
@@ -223,7 +223,7 @@ p {
 }
 
 .project-1-div {
-  height: 300px;
+  height: 420px;
   width: 350px;
   background-color: #f5f5f5;
   border: solid 1px #f5f5f5;
@@ -241,6 +241,20 @@ p {
 .project-1-div img {
   height: 250px;
   width: 300px;
+}
+
+.quotegenerator-description {
+  padding: 8px;
+}
+
+.quotegenerator-description p {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.quote-generator {
+  font-weight: bold;
 }
 
 .div-for-buttons {
@@ -283,7 +297,7 @@ p {
 }
 
 .project-2-div {
-  height: 300px;
+  height: 420px;
   width: 350px;
   background-color: #f5f5f5;
   border: solid 1px #f5f5f5;
@@ -296,6 +310,62 @@ p {
 .project-2-div img {
   height: 250px;
   width: 350px;
+}
+
+.project-list-2 {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 4.5rem;
+}
+
+.todo-description {
+  padding: 8px;
+}
+
+.todo-description p {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.todo {
+  font-weight: bold;
+}
+
+.project-3-div {
+  height: 400px;
+  width: 350px;
+  background-color: #f5f5f5;
+  border: solid 1px #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.project-3-div-image {
+  display: flex;
+  justify-content: center;
+}
+
+.project-3-div img {
+  height: 250px;
+  width: 300px;
+}
+
+.calculator-description {
+  padding: 10px;
+}
+
+.calculator-description p {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.JS-calculator {
+  font-weight: bold;
 }
 
 .contact {
@@ -364,18 +434,6 @@ p {
 .phone-number-div,
 .email-div,
 .location-div h2 {
-  font-family: "Roboto Condensed", sans-serif;
-}
-
-#call-me-btn,
-#email-me-btn {
-  height: 35px;
-  width: 90px;
-  border: solid 1px green;
-  border-radius: 10px;
-  background-color: green;
-  color: white;
-  cursor: pointer;
   font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -515,7 +573,7 @@ textarea:not(:placeholder-shown) + label {
   }
 
   .project-1-div {
-    height: 300px;
+    height: 400px;
     width: 300px;
     background-color: #f5f5f5;
     border: solid 1px #f5f5f5;
@@ -531,7 +589,7 @@ textarea:not(:placeholder-shown) + label {
   }
 
   .project-2-div {
-    height: 300px;
+    height: 400px;
     width: 300px;
     background-color: #f5f5f5;
     border: solid 1px #f5f5f5;
@@ -545,7 +603,26 @@ textarea:not(:placeholder-shown) + label {
     height: 200px;
     width: 300px;
   }
+
+  .project-3-div {
+    height: 400px;
+    width: 300px;
+    background-color: #f5f5f5;
+    border: solid 1px #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
   .project-list-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+  .project-list-2 {
     display: flex;
     flex-direction: column;
     align-items: center;
