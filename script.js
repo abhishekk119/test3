@@ -1,12 +1,15 @@
+//to hide/show hamburger icon and sidebar in mobile view//
 document.getElementById('hamburger-icon').addEventListener('click', () => {
     document.getElementById('hamburger-icon').classList.toggle('active');
     document.getElementById('menu-and-button').classList.toggle('active');
 });
 
+//link to resume (google drive) upon 'download my resume' button click//
 document.getElementById('btn').addEventListener('click', () => {
-    window.location.href = 'tel:+919332522166'; // Replace with your number
+  window.open("https://drive.google.com/file/d/1Kz1WPUbnMFzvP_PGeaTzU92cHo0FVPP3/view", "_blank", "noopener,noreferrer");
 });
 
+//scroll to about me section upon 'learn-more-about-me-button' button click//
 document.getElementById("learn-more-about-me-button").addEventListener("click", () =>
 {
     document.getElementById("about-me-div").scrollIntoView({
@@ -14,7 +17,7 @@ document.getElementById("learn-more-about-me-button").addEventListener("click", 
     });
 });
 
-
+//typewriter effect on the heading at the top which says 'Hi, I'm Abhishek'//
 const element = document.getElementById("typewriter");
 // Split into parts you want to control
 const textBefore = "Hi, I'm ";
@@ -42,7 +45,7 @@ function typeWriter() {
 typeWriter();
 
 
-
+//typewriter effect on the first paragraph on the top//
 const para = document.getElementById("typewriter-paragraph");
 
 // Grab the original text
@@ -67,22 +70,32 @@ typeWriterParagraph();
 
 
 
-
+//code button for quote generator project//
 document.getElementById("code-quote-button").addEventListener("click", function() {
   window.open("https://github.com/abhishekk119/quotegenerator", "_blank", "noopener,noreferrer");
 });
 
-
+//live demo button for quote generator project//
 document.getElementById("demo-button-quote").addEventListener("click", function() {
   window.open("https://abhishekk119.github.io/quotegenerator/", "_blank", "noopener,noreferrer");
 });
 
-
+//code button for todo app project//
 document.getElementById("logo-button-todo").addEventListener("click", function() {
   window.open("https://github.com/abhishekk119/newtodo", "_blank", "noopener,noreferrer");
 });
 
-
+//live demo button for todo app project//
 document.getElementById("demo-button-todo").addEventListener("click", function() {
   window.open("https://abhishekk119.github.io/newtodo/", "_blank", "noopener,noreferrer");
+});
+
+//code button for calculator//
+document.getElementById("code-calculator-button").addEventListener("click", function() {
+  window.open("https://github.com/abhishekk119/calculatornew", "_blank", "noopener,noreferrer");
+});
+
+//live demo button for calculator//
+document.getElementById("demo-button-calculator").addEventListener("click", function() {
+  window.open("https://abhishekk119.github.io/calculatornew/", "_blank", "noopener,noreferrer");
 });
