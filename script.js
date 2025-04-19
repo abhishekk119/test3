@@ -99,3 +99,41 @@ document.getElementById("code-calculator-button").addEventListener("click", func
 document.getElementById("demo-button-calculator").addEventListener("click", function() {
   window.open("https://abhishekk119.github.io/calculatornew/", "_blank", "noopener,noreferrer");
 });
+
+//for scroll effect animation//
+
+document.addEventListener('DOMContentLoaded', function() {
+  const sections = [
+    document.querySelector('.about-me'),
+    document.querySelector('.about-me-div'),
+    document.querySelector('.projects'),
+    document.querySelector('.projects-div'),
+    document.querySelector('.contact'),
+    document.querySelector('.contact-div')
+  ];
+
+  // Initialize all sections with slide-in class
+  sections.forEach((section, index) => {
+    if (section) {
+      section.classList.add('slide-in');
+      section.classList.add(`delay-${index % 3}`);
+    }
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+      } else {
+        entry.target.classList.remove('active'); // Remove when leaving viewport
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -100px 0px'
+  });
+
+  sections.forEach(section => {
+    if (section) observer.observe(section);
+  });
+});
